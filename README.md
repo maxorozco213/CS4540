@@ -6,6 +6,6 @@ Assignment 1
 
 
 Assignment 2
-*     Random number generator mobile application
-*     Import into Android Studio
-*     Must have Android Studio 3.6+
+*    Random number generator mobile application
+     Import into Android Studio
+     Must have Android Studio 3.6+
