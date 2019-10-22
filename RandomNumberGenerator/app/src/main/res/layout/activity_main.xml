@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/background">
 
     <EditText
         android:id="@+id/upperBoundEntry"
@@ -17,6 +18,7 @@
         android:ems="10"
         android:hint="@string/upperBoundHint"
         android:inputType="number"
+        android:background="@color/inputBoxes"
         app:layout_constraintBottom_toTopOf="@+id/withReplaceCheckBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.425"
@@ -53,6 +55,7 @@
         android:layout_height="37dp"
         android:layout_marginTop="164dp"
         android:text="@string/buttonText"
+        android:background="@color/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,6 +82,7 @@
         android:ems="10"
         android:hint="@string/lowerBoundHint"
         android:inputType="number"
+        android:background="@color/inputBoxes"
         app:layout_constraintBottom_toTopOf="@+id/upperBoundEntry"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.387"
