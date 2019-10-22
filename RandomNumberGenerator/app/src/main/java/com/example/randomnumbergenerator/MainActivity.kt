@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
             val upperInt = upperBound.text.toString().toInt()
             val valueRange: IntRange = (lowerInt..upperInt)
             var randomInt = valueRange.random()
+            var isUnique = true
             val checked: Boolean = replacementCheckBox.isChecked
             print(usedNumbers)
 
@@ -34,15 +35,19 @@ class MainActivity : AppCompatActivity() {
                 R.id.withReplaceCheckBox -> {
                     if (checked) {
                         while (usedNumbers.contains(randomInt)) {
+                            isUnique = true
                             randomInt = valueRange.random()
                             if (usedNumbers.count() == valueRange.count()) {
                                 Toast.makeText(this, "No unused numbers remaining", LENGTH_LONG).show()
+                                isUnique = false
                                 break
                             }
                         }
 
-                        generatedNumView.text = randomInt.toString()
-                        usedNumbers.add(randomInt)
+                        if(isUnique) {
+                            generatedNumView.text = randomInt.toString()
+                            usedNumbers.add(randomInt)
+                        }
                     } else {
                         generatedNumView.text = randomInt.toString()
                     }
