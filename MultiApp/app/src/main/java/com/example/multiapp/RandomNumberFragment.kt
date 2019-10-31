@@ -1,13 +1,13 @@
-package com.example.randomnumbergenerator
+package com.example.multiapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import android.widget.Toast.LENGTH_LONG
+import androidx.fragment.app.Fragment
 import java.lang.Exception
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+class RandomNumberFragment : Fragment() {
+    override fun onCreateView(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val goButton: Button = findViewById(R.id.getNumberButton)

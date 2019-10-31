@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">MultiApp</string>
+    <string name="app_name">RandomNumberGenerator</string>
+    <string name="titleText">Get a Random Number!</string>
+    <string name="upperBoundHint">Upper bound</string>
+    <string name="lowerBoundHint">Lower bound</string>
+    <string name="checkBoxText">Without Replacement</string>
+    <string name="buttonText">GET NUMBER</string>
+    <string name="RandomNum" />
 </resources>
