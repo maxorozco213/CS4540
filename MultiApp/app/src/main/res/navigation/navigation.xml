@@ -9,5 +9,23 @@
         android:id="@+id/randomNumberFragment"
         android:label="Generate Random Number"
         android:name="com.example.multiapp.RandomNumberFragment"
-        tools:layout="@layout/fragment_randnum"/>
+        tools:layout="@layout/fragment_randnum">
+        <action
+            android:id="@+id/action_randomNumberFragment_to_dieRollerFragment"
+            app:destination="@id/dieRollerFragment" />
+        <action
+            android:id="@+id/action_randomNumberFragment_to_tipCalculator"
+            app:destination="@id/tipCalculator" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dieRollerFragment"
+        android:label="Roll Some Dice"
+        android:name="com.example.multiapp.DieRollerFragment"
+        tools:layout="@layout/fragment_dieroller"/>
+    <fragment
+        android:id="@+id/tipCalculator"
+        android:name="com.example.multiapp.TipCalculator"
+        android:label="fragment_tip_calculator"
+        tools:layout="@layout/fragment_tip_calculator" />
 </navigation>
