@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MultiApp</string>
+    <string name="app_name">Multi App</string>
     <string name="multi_fragment">MultiApp</string>
     <string name="titleText">Get a Random Number!</string>
     <string name="upperBoundHint">Upper bound</string>
@@ -12,4 +12,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tipFifteen">15%</string>
+    <string name="tipEighteen">18%</string>
+    <string name="tipTwenty">20%</string>
+    <string name="dollarSign">$</string>
+    <string name="calculateButton">Calculate</string>
+    <string name="navToTipButton">Tip Calculator</string>
 </resources>

@@ -27,7 +27,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/empty_dice"
-            tools:src="@drawable/dice_1" />
+            tools:src="@drawable/dice_1"
+            android:contentDescription="TODO" />
 
         <Button
             android:id="@+id/rollButton"
@@ -37,8 +38,24 @@
             android:text="@string/button_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/diceImage" />
+            app:layout_constraintTop_toBottomOf="@+id/diceImage"
+            app:layout_constraintVertical_bias="0.218" />
+
+        <Button
+            android:id="@+id/navToTipCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="52dp"
+            android:text="@string/navToTipButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rollButton"
+            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

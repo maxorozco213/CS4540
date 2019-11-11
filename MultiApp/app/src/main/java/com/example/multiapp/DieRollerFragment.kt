@@ -5,14 +5,14 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.example.multiapp.databinding.FragmentDierollerBinding
-import kotlin.random.Random
 
 class DieRollerFragment: Fragment() {
+    lateinit var drawableImage: ImageView
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
@@ -21,8 +21,7 @@ class DieRollerFragment: Fragment() {
             inflater, R.layout.fragment_dieroller, container, false)
         binding.dieRoller = this
 
-        lateinit var drawableImage: ImageView
-
+        drawableImage = binding.diceImage
         binding.rollButton.setOnClickListener @Suppress ("UNUSED_ANONYMOUS_PARAMETER")
         { view: View ->
             Log.i("ROLLED", "Button was pressed")
@@ -37,6 +36,12 @@ class DieRollerFragment: Fragment() {
             }
 
                 drawableImage.setImageResource(drawableDice)
+        }
+
+        binding.navToTipCalc.setOnClickListener @Suppress ("UNUSED_ANONYMOUS_PARAMETER")
+        { navView: View ->
+                navView.findNavController()
+                    .navigate(R.id.action_dieRollerFragment_to_tipCalculatorFragment)
         }
 
         return binding.root

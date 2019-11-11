@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.example.multiapp.databinding.FragmentRandnumBinding
 
 class RandomNumberFragment: Fragment() {
@@ -74,6 +75,13 @@ class RandomNumberFragment: Fragment() {
                 Log.i("ISCHECKED VAL", binding.withReplaceCheckBox.isChecked.toString())
             }
         }
+
+        binding.navToDice.setOnClickListener @Suppress ("UNUSED_ANONYMOUS_PARAMETER")
+        { navView: View ->
+            navView.findNavController()
+                .navigate(R.id.action_randomNumberFragment_to_dieRollerFragment)
+        }
+
         return binding.root
     }
 }
