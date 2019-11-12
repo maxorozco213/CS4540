@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
 
+    <group android:checkableBehavior="single">
     <item
-        android:id="@+id/randNumFragment"
+        android:id="@+id/randomNumberFragment"
         android:title="@string/random_number_nav_item" />
     <item
-        android:id="@+id/diceFragment"
-        android:icon="@drawable/dice_3"
+        android:id="@+id/dieRollerFragment"
         android:title="@string/dice_roller_nav_item" />
     <item
-        android:id="@+id/tipCalcFragment"
-        android:title="@string/tip_calculator_nav_item" />
+        android:id="@+id/tipCalculatorFragment"
+        android:title="@string/tip_calculator_nav_item"
+        />
+    </group>
 
 </menu>
