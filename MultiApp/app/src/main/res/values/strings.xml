@@ -1,21 +1,25 @@
 <resources>
     <string name="app_name">Multi App</string>
     <string name="multi_fragment">MultiApp</string>
+<!--    Random Number Generator-->
     <string name="titleText">Get a Random Number!</string>
     <string name="upperBoundHint">Upper bound</string>
     <string name="lowerBoundHint">Lower bound</string>
     <string name="checkBoxText">Without Replacement</string>
     <string name="buttonText">GET NUMBER</string>
     <string name="RandomNum" />
+<!--    Dice Roller-->
     <string name="die_fragment">DiceRoller</string>
     <string name="button_text">Roll</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+<!--    Tip Calculator-->
     <string name="tipFifteen">15%</string>
     <string name="tipEighteen">18%</string>
     <string name="tipTwenty">20%</string>
     <string name="dollarSign">$</string>
     <string name="calculateButton">Calculate</string>
     <string name="navToTipButton">Tip Calculator</string>
+<!--    Nav Drawer-->
+    <string name="random_number_nav_item">Random Number Generator</string>
+    <string name="dice_roller_nav_item">Dice Roller</string>
+    <string name="tip_calculator_nav_item">Tip Calculator</string>
 </resources>

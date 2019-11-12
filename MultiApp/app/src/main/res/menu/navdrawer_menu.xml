@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/randNumFragment"
+        android:title="@string/random_number_nav_item" />
+    <item
+        android:id="@+id/diceFragment"
+        android:icon="@drawable/dice_3"
+        android:title="@string/dice_roller_nav_item" />
+    <item
+        android:id="@+id/tipCalcFragment"
+        android:title="@string/tip_calculator_nav_item" />
+
+</menu>

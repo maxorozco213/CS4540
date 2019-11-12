@@ -25,6 +25,11 @@
     <fragment
         android:id="@+id/tipCalculatorFragment"
         android:name="com.example.multiapp.TipCalculatorFragment"
-        android:label="TipCalculatorFragment" />
+        android:label="TipCalculatorFragment" >
+        <action
+            android:id="@+id/action_tipCalculatorFragment_to_randomNumberFragment"
+            app:destination="@id/randomNumberFragment"
+            app:popUpTo="@id/randomNumberFragment" />
+    </fragment>
 
 </navigation>

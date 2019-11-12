@@ -2,7 +2,6 @@ package com.example.multiapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 
@@ -14,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         val navController = this.findNavController(R.id.myNavHostFragment)
         NavigationUI.setupActionBarWithNavController(this, navController)
+            .setupWithNavController(navController)
     }
 
     override fun onSupportNavigateUp(): Boolean {
