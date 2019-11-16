@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/randomNumberFragment">
+
+    <fragment
+        android:id="@+id/randomNumberFragment"
+        android:label="Generate Random Number"
+        android:name="com.example.multiapp.RandomNumberFragment"
+        tools:layout="@layout/fragment_randnum">
+        <action
+            android:id="@+id/action_randomNumberFragment_to_dieRollerFragment"
+            app:destination="@id/dieRollerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dieRollerFragment"
+        android:name="com.example.multiapp.DieRollerFragment"
+        android:label="DieRollerFragment" >
+        <action
+            android:id="@+id/action_dieRollerFragment_to_tipCalculatorFragment"
+            app:destination="@id/tipCalculatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tipCalculatorFragment"
+        android:name="com.example.multiapp.TipCalculatorFragment"
+        android:label="TipCalculatorFragment" >
+        <action
+            android:id="@+id/action_tipCalculatorFragment_to_randomNumberFragment"
+            app:destination="@id/randomNumberFragment"
+            app:popUpTo="@id/randomNumberFragment" />
+    </fragment>
+
+</navigation>

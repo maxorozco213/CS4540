@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="randNumGen"
+            type="com.example.multiapp.RandomNumberFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/randomNumberFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/upperBoundEntry"
+            android:layout_width="288dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="79dp"
+            android:layout_marginBottom="68dp"
+            android:background="@color/inputBoxes"
+            android:ems="10"
+            android:hint="@string/upperBoundHint"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/withReplaceCheckBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.425"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lowerBoundEntry" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="61dp"
+            android:text="@string/titleText"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/lowerBoundEntry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/withReplaceCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/checkBoxText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.206"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/upperBoundEntry" />
+
+        <Button
+            android:id="@+id/getNumberButton"
+            android:layout_width="310dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="164dp"
+            android:background="@color/button"
+            android:text="@string/buttonText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/withReplaceCheckBox" />
+
+        <TextView
+            android:id="@+id/generatedNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/RandomNum"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/getNumberButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.464"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/withReplaceCheckBox"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/lowerBoundEntry"
+            android:layout_width="282dp"
+            android:layout_height="44dp"
+            android:autofillHints=""
+            android:background="@color/inputBoxes"
+            android:ems="10"
+            android:hint="@string/lowerBoundHint"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/upperBoundEntry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.387"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.743" />
+
+        <Button
+            android:id="@+id/navToDice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dice Roller"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/getNumberButton"
+            app:layout_constraintVertical_bias="0.233" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
